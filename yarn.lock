@@ -4726,6 +4726,10 @@ recast@~0.11.12:
     private "~0.1.5"
     source-map "~0.5.0"
 
+"recipes@git+ssh://git@bitbucket.org:mcbc/recipes-files.git":
+  version "1.0.0"
+  resolved "git+ssh://git@bitbucket.org:mcbc/recipes-files.git#e084d677cf400fb919409c9b7e3ecde6a856bf8a"
+
 redent@^1.0.0:
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/redent/-/redent-1.0.0.tgz#cf916ab1fd5f1f16dfb20822dd6ec7f730c2afde"
