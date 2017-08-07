@@ -54,7 +54,11 @@ return [
             'url' => env('APP_URL').'/storage',
             'visibility' => 'public',
         ],
-
+        'recipes' => [
+            'driver' => 'local',
+            'root' => base_path('node_modules/recipes/src/recipes'),
+            'url' => env('APP_URL').'/storage',
+        ],
         's3' => [
             'driver' => 's3',
             'key' => env('AWS_KEY'),
