@@ -37,8 +37,10 @@ class RecipeFactory
 
       foreach($paths as $path) {
         $files[] = static::loadFromFile($path);
+        $folder = array_collapse($files);
+        $collections[$path] = collect($folder);
       }
 
-      return $files;
+      return $collections;
     }
 }
