@@ -11,9 +11,6 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/', 'PageController@welcome');
 
-Route::get('/recipes/{type}', 'RecipeController@type');
-Route::get('/recipes', 'RecipeController@index');
+Route::get('/recipes', 'PageController@recipes');
